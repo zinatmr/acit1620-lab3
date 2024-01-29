@@ -8,6 +8,8 @@ body {
 form {
     border: 1px solid #ccc;
     padding: 1rem;
+    margin-left: 130px;
+    margin-right: 50px;
 }
 
 input,
@@ -28,38 +30,83 @@ form button {
     margin-left: auto;
 }
 .page-container {
-    border:1px;
-    padding:20px;
+    padding:3px;
+    width: 100%;
+    top:0;
     text-align: center;
-    background-color: rgb(0, 122, 128);
-}
-a{
-    text-decoration: none;
-    color: rgb(0, 122, 128);
-    line-height:2;
-}
-li{
-    list-style-type: none;
+    background-color: rgb(0, 122, 125);
 }
 aside{
     float:left;
-    margin-bottom: 350px  ;
+    margin-bottom: 20px  ;
     margin-right: 20px ;
     text-align: right;
 }
-img {
-    float: left;
-    height: 150px;
-    width:220px;
-    margin-right: 15px;
-}
+
 footer{
-    border:1px ;
     padding: 3px;
     text-align: center;
-    background: rgb(0, 122, 128);
-    margin-top: 350px;
+    bottom: 0;
+    position: absolute;
+    background: rgb(0, 122, 125);
+    margin-top: 305px;
+    width: 100%;
 }
 .footer{
     color: #ffffff;
 }
+h2{
+    margin-top: 30px;
+}
+.showlink{
+    display: block;
+    text-decoration: none;
+}
+.nounderline{
+    display:block;
+    text-decoration: none;
+    color: rgb(0, 122, 125);
+    line-height: 2;
+}
+.wrap{
+    float: left;
+    margin-right: 15px;
+}
+p{
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+ @media screen and (max-width: 600px) {
+    aside{
+        clear: left;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+
+    }
+    .showlink{
+        display: inline-flex;
+        border-right: solid 1px #ccc;
+        padding: 0;
+    }
+    .nounderline{
+        display:block;
+        text-decoration: none;
+        color: rebeccapurple;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .showlink:last-child{
+        border-right: #ffffff;
+    }
+    footer{
+        position: relative;
+        bottom: 0;
+        margin-top: 305px;
+    }
+ 
+    
